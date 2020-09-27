@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
+
+body
+{
+	color:#ecf0f1;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.3vw;
+	text-transform: uppercase;
+	background: #27ae60;
+	background: black;
+	overflow: hidden;
+}
+a
+{
+	color: inherit;
+	text-decoration:none; 
+	cursor:pointer;
+	transition: 0.5s;
+}
+a:hover
+{
+	color:#34495e;
+	transition: 0.5s;
+}
+.textContainer
+{
+	position: absolute;
+	top:0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom right, rgba(39, 174, 96,0.9), rgba(41, 128, 185,0.8)), center / cover url(https://source.unsplash.com/featured/?wallpaper);
+	overflow: hidden;
+
+	animation: fadeIn 4s 0.5s backwards;
+}
+.textTitle
+{
+	font-weight: 100;
+	font-size: 4em;
+
+	animation: fadeInUp 2s 1s backwards;
+}
+.textBreak
+{
+	width: 150px;
+	border-top:2px dotted #ecf0f1;
+	margin: 2vh 0;
+}
+.animBreak1
+{
+	animation: fadeInUp 2s 1.25s backwards;
+}
+.animBreak2
+{
+	animation: fadeInUp 2s 2s backwards;
+}
+.textSubtitle
+{
+	font-weight: 400;
+	margin: 2vh 0;
+}
+.animSub1
+{
+	animation: fadeInUp 2s 1.5s backwards;
+}
+.animSub2
+{
+	animation: fadeInUp 2s 2.25s backwards;
+}
+.textButtonContainer
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	animation: fadeInUp 2s 1.75s backwards;
+}
+.textButtons
+{
+	font-weight: 600;
+	font-size: 1.3em;
+	padding: 1vh 2vw; 
+	margin: 1vw;
+	border:1px solid #ecf0f1;
+	border-radius: 5px;
+	background: rgba(0, 0, 0,0.0);
+}
+.buttonPatreon:hover
+{
+	background: #f96854;
+}
+.buttonTwitch:hover
+{
+	background: #9146ff;
+}
+.textButtons:hover
+{
+	border:1px solid rgba(0, 0, 0,0.0);
+}
+.textSocialContainer
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	margin-top: 1vh;
+
+	animation: fadeInUp 2s 2.5s backwards;
+}
+.textSocials
+{
+	font-size: 1.2em;
+	margin: 0 1vw;
+}
+
+@keyframes fadeIn
+{
+    from
+	{
+		filter:opacity(0);		
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
+@keyframes fadeInUp
+{
+    from
+	{
+		filter:opacity(0);
+		transform: translateY(4vh);	
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
